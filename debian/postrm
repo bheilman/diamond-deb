@@ -21,6 +21,7 @@ set -e
 
 case "$1" in
     purge)
+        update-rc.d diamond remove
         [ -d /var/log/diamond ] && rm -rf /var/log/diamond
         [ -d /etc/diamond ] && rm -rf /etc/diamond
     ;;
