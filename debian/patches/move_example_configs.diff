@@ -1,0 +1,27 @@
+--- a/setup.py
++++ b/setup.py
+@@ -35,18 +35,18 @@
+     distro_major_version = platform.dist()[1].split('.')[0]
+ 
+     if os.getenv('VIRTUAL_ENV', False):
+-        data_files.append(('etc/diamond',
++        data_files.append(('usr/share/doc/diamond/example',
+                            glob('conf/*.conf.*')))
+-        data_files.append(('etc/diamond/collectors',
++        data_files.append(('usr/share/doc/diamond/example/collectors',
+                            glob('conf/collectors/*')))
+-        data_files.append(('etc/diamond/handlers',
++        data_files.append(('usr/share/doc/diamond/example/handlers',
+                            glob('conf/handlers/*')))
+     else:
+-        data_files.append(('/etc/diamond',
++        data_files.append(('/usr/share/doc/diamond/example',
+                            glob('conf/*.conf.*')))
+-        data_files.append(('/etc/diamond/collectors',
++        data_files.append(('/usr/share/doc/diamond/example/collectors',
+                            glob('conf/collectors/*')))
+-        data_files.append(('/etc/diamond/handlers',
++        data_files.append(('/usr/share/doc/diamond/example/handlers',
+                            glob('conf/handlers/*')))
+ 
+         if distro == 'Ubuntu':
