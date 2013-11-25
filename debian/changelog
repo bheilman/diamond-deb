@@ -1,5 +1,5 @@
-diamond (3.4.68-1) unstable; urgency=low
+diamond (3.4.68-1) UNRELEASED; urgency=low
 
   * source package automatically created by stdeb 0.6.0+git
 
- -- The Diamond Team <https://github.com/BrightcoveOS/Diamond>  Mon, 25 Nov 2013 10:40:48 -0600
+ -- Ben Heilman <bheilman@enova.com>  Mon, 25 Nov 2013 10:40:48 -0600
