@@ -1,2 +1,3 @@
 move_example_configs.diff
 do_not_create_keep_file.diff
+do_not_install_init_script.py
