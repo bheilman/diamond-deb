@@ -1,12 +1,16 @@
 Source: diamond
 Maintainer: Ben Heilman <bheilman@enova.com>
-Section: python
-Priority: optional
-Build-Depends: python-all (>= 2.6.6-3), debhelper (>= 7.4.3)
+Section: misc
+Priority: extra
+Homepage: https://github.com/BrightcoveOS/Diamond
+Vcs-Git: git://github.com/BrightcoveOS/Diamond.git
+Vcs-Browser: https://github.com/BrightcoveOS/Diamond
+Build-Depends: python-all (>= 2.4), debhelper (>= 7.4.3), python-support, python-mock, python-configobj, cdbs
 Standards-Version: 3.9.1
 
-Package: python-diamond
+Package: diamond
 Architecture: all
-Depends: ${misc:Depends}, ${python:Depends}
+Depends: ${misc:Depends}, ${python:Depends}, python (>= 2.4), python-configobj
 Description: Smart data producer for graphite graphing package
-
+ Diamond is a daemon and toolset for gathering system statistics
+ and publishing them to Graphite.
