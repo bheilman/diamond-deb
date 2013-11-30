@@ -40,7 +40,7 @@ esac
 #DEBHELPER#
 
 # Log / Run directory permissions
-chown -R diamond /var/log/diamond
+chown -R diamond:diamond /var/log/diamond
 
 if [ -x /lib/init/upstart-job ]
 then
